@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color:grey;
+}
+
+.container  {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 40px;
+    width:80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    color : darkslateblue;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#wordContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.word {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.character {
+    display: inline-block;
+    transition : color 0.3s ease;
+}
+
+.correct { 
+    color : darkgreen;
+}
+
+.incorrect {
+    color : darkred;
+}
+
+.cursor {
+    display: inline-block;
+    width : 2px;
+    height : 1.5rem;
+    background-color: black;
+    animation : blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity : 0;
+    }
+}
+
+#textInputBox {
+    opacity : 0;
+    /* display: none; */
+    /* width : 100%;
+    padding : 10px;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-top: 20px; */
+}
